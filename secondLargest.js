@@ -4,11 +4,21 @@
 *   return {Number} The second largest number in the array.
 **/
 
-function getSecondLargest(nums) {
+function getSecondLargest(arr) {
     // Complete the function
-    nums.sort();
+    arr = [...new Set(arr)]  // Remove duplicate numbers
+    const secondLarge = arr.sort((a,b) => {
+        return b - a
+    })[1]
     
-    console.log(nums)
+    console.log(`The second largest number is: ${secondLarge}`) 
 }
 
-console.log(getSecondLargest([8,1,2,9,5]))
+getSecondLargest([8,40,90,90,5])
+
+
+// Set es una colección de tipo especial: “conjunto de valores” (sin claves), donde cada valor puede aparecer solo una vez.
+
+// Sus principales métodos son:
+
+// new Set(iterable) – crea el set. El argumento opcional es un objeto iterable (generalmente un array) con valores para inicializarlo.
