@@ -14,7 +14,7 @@ function getSecondLargest(arr) {
     console.log(`The second largest number is: ${secondLarge}`) 
 }
 
-getSecondLargest([8,40,90,90,5])
+getSecondLargest([2,3,6,6,5])
 
 
 // Set es una colección de tipo especial: “conjunto de valores” (sin claves), donde cada valor puede aparecer solo una vez.
