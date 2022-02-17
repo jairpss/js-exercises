@@ -12,4 +12,4 @@ const Capitalize = (str) => {
     return sentence.join(" ");
 } 
 
-console.log(Capitalize('jair partida santana'));
+console.log(Capitalize('jaiR paRtida sAntana'));
